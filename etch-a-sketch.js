@@ -32,6 +32,27 @@ function createDIv(requestLength, requestWidth) {
     }
     console.log("final primary div with appends. " + primaryDiv);
     // return document.append(primaryDiv);
+
+
+    //get all the elements iwht class myDiv
+    const theDivs = document.getElementsByClassName("myDiv");
+
+    //loop through each element and attach event listener
+    for(i = 0; i < theDivs.length; i++){
+        const divElement = theDivs[i];
+
+        divElement.addEventListener("mouseover", () => {
+            console.log("in event listener mouseover: ");
+            divElement.style.backgroundColor="lightblue";
+        });
+
+        divElement.addEventListener("mouseout", () => {
+            console.log("in mouseout listener event: ");
+            divElement.style.backgroundColor="";
+        });
+        
+    };
+
     return primaryDiv;
 }
 
@@ -49,6 +70,7 @@ boxButton.addEventListener("click", (event) => {
     console.log("createDiv function enabled. ");
     console.log('button clicked, event passed to function...' + event.text);
 });
+
 
 //console.log(boxButton);
 
