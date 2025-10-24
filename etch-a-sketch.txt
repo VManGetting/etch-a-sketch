@@ -1,0 +1,14 @@
+/*
+create a webpage with 16 X 16 grid of square divs (create divs using javascript)
+Use flexbox for div grids
+Add hover effect to grid divs when mouse hovers over them.  Use event listeners.
+Add button for popup asking for number of squares.  Max of 100 squares.  
+  understand buttons and prompts
+
+extra credit
+randomize squares color with each interaction
+Add progressive dark effect.  At progressive color change it should be black by 10 interactions
+  Learn opacity CSS property
+
+
+*/
